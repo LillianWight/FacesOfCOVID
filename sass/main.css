@@ -216,4 +216,13 @@ body {
 .header__textBox {
   text-align: center;
 }
+
+.section-faces .card {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.section-faces .card__side--front {
+  line-height: 0;
+}
 /*# sourceMappingURL=main.css.map */
