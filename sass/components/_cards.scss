@@ -1,0 +1,45 @@
+.card {
+
+    // functionality //
+    perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    
+    &__side {
+        height: 50rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+            background: $color-grey-light-1;
+            color: $color-black;
+            padding: 5rem;
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // front side styling //
+    &__picture {
+        width: 100%;
+    }
+}
+
