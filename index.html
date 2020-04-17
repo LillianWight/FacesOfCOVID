@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Faces Of COVID</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-		<link href="css/icon-font.css" rel="stylesheet">
+        
 		<link href="sass/main.css" rel="stylesheet">
     </head>
     
 	<body>
-		<header class="header">
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <img src="img/candle-64.png" class="navigation__icon">
+            </label>
+            <div class="navigation__background">&nbsp;</div><!-- end navigation__background -->
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Submit Your Memory</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Back</a></li>
+                </ul>
+            </nav>
+        </div><!-- end navigation -->
+
+        <div class="about" id="about">
+            <div class="about__content">
+                <a href="#" class="about__close">&times;</a>
+                <p class="about__text">Designed and built by Lauren Gayle, Jinay Jain, Rama Mani, <a href="https://www.linkedin.com/in/lillianwight/" target="_blank" class="about__link">Lillian Wight</a>, and Emily Zacherl as their contribution to <a href="https://codevid19.com/" target="_blank" class="about__link">CODEVID-19</a>, the world's first global pandemic hackathon.</p>
+            </div><!-- end about__content-->
+        </div><!-- end about -->
+
+		<header class="header" id="header">
             <div class="header__textBox">
             <h1 class="primaryHeading"> 
                 <span class="primaryHeading__main">Remembering People</span>
@@ -25,51 +49,63 @@
                 <div class="photos__cards"> <!-- container -->
                     <div class="photos__cards--side"><!-- flipper -->
                         <div class="photos__cards--front"><!-- front -->
-                            <img src="img/Dario Sr.jpg">
-                        </div><!-- end photos__cards--front -->
+                            <img src="img/Dario-Sr.jpg" alt="photo of a young man and his father">
+                        </div><!-- end photos__cards front -->
                         <div class="photos__cards--back"><!-- back -->
                             <h4>Dario, Sr.</h4>
                                 <p>My dad died two days ago from COVID19. He died alone because the hospital restricted all visitors in order to contain the outbreak. My deepest regret was not saying bye to him when I brought him to the hospital. I thought it was going to be a “Take care, see you back home.”</p>
-                        </div><!-- end photos__cards--back -->
-                    </div><!-- end photos__cards--side -->
+                        </div><!-- end photos__cards back -->
+                    </div><!-- end photos__cards side -->
                 </div><!-- end cards -->
 
                 <div class="photos__cards">
                     <div class="photos__cards--side">
                         <div class="photos__cards--front">
-                            <img src="img/Frank Gabrin.jpg">
-                        </div><!-- end photos__cards--front -->
+                            <img src="img/Frank-Gabrin.jpg" alt="photo of a man and his friend">
+                        </div><!-- end photos__cards front -->
                     <div class="photos__cards--back">
                         <h4>Dr. Frank Gabrin</h4>
                             <p>I lost my best friend to Covid19 a few hours ago. Dr Frank Gabrin was an ER Doctor in NYC. He planned to go back to work when he recovered. It took only five days from the first sign of symptoms. He leaves a husband of less than one year behind. We are devastated.</p>
-                    </div><!-- end photos__side--back -->
-                    </div><!-- end photos__cards--side -->
+                    </div><!-- end photos__side back -->
+                    </div><!-- end photos__cards side -->
                 </div><!-- end photos -->
 
                 <div class="photos__cards">
                     <div class="photos__cards--side">
                         <div class="photos__cards--front">
-                            <img src="img/Natasha Ott.jpg">
-                        </div><!-- end photos__cards--front -->
+                            <img src="img/Natasha-Ott.jpg" alt="photo of a young woman at an outdoor event">
+                        </div><!-- end photos__cards front -->
                     <div class="photos__cards--back">
                         <h4>Natasha Ott, 39</h4>
                             <p>A relative, Emily Coalson Stamets, called Ott “one of the smartest people I know.” Retired nurse Christiane Geisler, who worked with Ott, a social worker, at CrescentCare, said in an interview that she “never said 'no' to a client in need.”</p>
-                    </div><!-- photos__cards--back -->
-                    </div><!-- end photos__cards--side -->
+                    </div><!-- photos__cards back -->
+                    </div><!-- end photos__cards side -->
                 </div><!-- end photos__cards -->
 
                 <div class="photos__cards">
                     <div class="photos__cards--side">
                         <div class="photos__cards--front">
-                            <img src="img/Rebecca Mack.jpg">
-                        </div><!-- photos__cards--front -->
+                            <img src="img/Rebecca-Mack.jpg" alt="photo of a young woman in her graduating cap and gown">
+                        </div><!-- end photos__cards front -->
                     <div class="photos__cards--back">
                         <h4>Rebecca Mack, RN</h4>
                             <p>She was an absolutely wonderful daughter. We couldn't have wished for a nicer daughter. She was so caring. She was just the light of our lives. I can't even begin to imagine life without her.</p>
-                    </div><!-- end photos__cards--back -->
-                    </div><!-- end photos__cards--side -->
+                    </div><!-- end photos__cards back -->
+                    </div><!-- end photos__cards side -->
                 </div><!-- end photos__cards -->
             </section><!-- end photos -->
         </main>
     </body>
-    </html>    
+    
+    <footer class="footer">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus lorem et quam congue, in rhoncus lectus mattis. Maecenas volutpat urna sit amet nisi cursus, et elementum arcu laoreet. Donec non justo facilisis, ultrices lorem eget, lobortis ex. Fusce dolor arcu, consectetur nec placerat at, posuere et arcu. Vestibulum finibus elit erat, ac vestibulum turpis iaculis et. In sodales magna id fermentum tincidunt. Ut non quam in urna hendrerit ullamcorper. Donec congue metus non ultricies pellentesque. Suspendisse dignissim metus ac mauris efficitur, at dignissim lacus interdum. Aenean nisl metus, tempus eu interdum sodales, vehicula non odio. Sed sit amet diam turpis. Maecenas viverra neque eget quam vestibulum, vel vestibulum erat tristique. Aliquam in suscipit elit, in sagittis tortor.</p>
+            
+
+        <p>Aenean quis lectus sit amet eros vehicula tempus. Sed vel nulla ut velit tempus bibendum. Mauris eu consequat enim. In scelerisque rhoncus elit, at fermentum ex faucibus eu. Donec lobortis efficitur dolor, sed dignissim leo efficitur nec. Sed ultrices finibus augue eget ullamcorper. Phasellus at dapibus tortor, eu tincidunt urna. Mauris venenatis, justo nec tincidunt mattis, nisi lorem porttitor leo, id lacinia sem neque ac dolor. Maecenas a magna ut neque sollicitudin rhoncus non non lorem. Ut et quam rhoncus, efficitur nisi cursus, feugiat tellus. Integer eget erat ipsum. Phasellus ut felis gravida, semper eros eu, elementum enim. Sed finibus, orci non malesuada bibendum, purus nunc tempor dui, nec lobortis tortor lacus et ligula. Sed quis malesuada mauris, vitae condimentum turpis.</p>
+
+        <p>Sed sem elit, faucibus at sapien non, lobortis porttitor nisi. Curabitur gravida arcu vel tortor tincidunt iaculis. Nam blandit feugiat justo, sed gravida augue tempus tincidunt. Integer maximus faucibus eros, eget feugiat sem mattis a. Nam at congue purus. In hac habitasse platea dictumst. Suspendisse maximus odio tellus, in suscipit ligula porttitor non. Fusce fringilla ante at rutrum pulvinar. Nullam posuere ante urna, pulvinar finibus nulla suscipit at.  </p>
+
+    </footer>
+
+</html>

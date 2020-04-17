@@ -1,0 +1,30 @@
+.button {
+    &,
+    &:link,
+    &:visited {
+        background-color: rgba($color-black, 0.1);
+        font-size: 2rem;
+        box-shadow: inset 0.3rem 0.3rem 0.5rem ($color-white), 0.7rem 0.7rem 0.5rem rgba($color-black, 0.5);
+        transition: all;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        display: inline-block;
+        border-radius: 7rem;
+        transition: all .2s;
+        font-size: $default-font-size;
+        color: $color-grey-dark-3;
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: rgba($color-white, 0.1);
+        color: $color-black;
+        box-shadow: inset 0.2rem 0.2rem 0.5rem $color-white, 0.7rem 0.7rem 0.5rem rgba($color-black, 0.5); }
+
+        &:active {
+            background-color: rgba($color-white, 0.1);
+            color: $color-black;
+            box-shadow: inset 0.4rem 0.4rem 0.9rem rgba($color-black, 0.8); }
+}
