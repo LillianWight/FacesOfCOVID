@@ -75,7 +75,7 @@ body {
 }
 
 .secondaryHeading {
-  padding: 0 0 2rem;
+  padding: 0 0 5rem;
   text-align: left;
   color: #f7f7f7;
 }
@@ -343,7 +343,7 @@ img {
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
   background: url(/img/candle-small.jpg) #fff;
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
   border-radius: 3px;
   font-size: 1.6rem;
@@ -356,10 +356,7 @@ img {
 }
 
 .share__form {
-  width: 60%;
-  position: relative;
-  top: 5rem;
-  left: 60rem;
+  width: 70%;
 }
 
 .share:target {
