@@ -29,7 +29,9 @@
     }
 
     &__form {
-        width: 70%;
+        display: inline-block;
+        padding-right: 5rem;
+        background: rgba($color-black, .4)
         
     }
 

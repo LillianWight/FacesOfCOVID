@@ -68,9 +68,9 @@ body {
 }
 
 .secondaryHeading {
-  padding: 0 0 5rem;
-  text-align: left;
-  color: #f7f7f7;
+  padding: 5rem 0;
+  text-align: center;
+  color: #ffdd80;
 }
 
 h4 {
@@ -266,6 +266,7 @@ img {
   display: inline-block;
   width: 100%;
   line-height: 0;
+  direction: rtl;
 }
 
 .form__input {
@@ -273,7 +274,7 @@ img {
   font-family: inherit;
   color: #333;
   padding: 1rem;
-  width: 55%;
+  width: 45%;
   border-radius: 2px;
   background-color: #f7f7f7;
   border: none;
@@ -281,6 +282,7 @@ img {
   display: block;
   -webkit-transition: all .3s;
   transition: all .3s;
+  direction: ltr;
 }
 
 .form__input:focus {
@@ -299,7 +301,7 @@ img {
 .form__label {
   font-size: 2rem;
   font-weight: 700;
-  margin-top: .7rem;
+  margin-top: 1rem;
   display: block;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -324,7 +326,7 @@ img {
   top: 0;
   right: 0;
   display: inline-block;
-  height: 60px;
+  height: 6rem;
   background: #f7f7f7;
   color: #333;
   font-weight: 700;
@@ -420,7 +422,9 @@ img {
 }
 
 .share__form {
-  width: 70%;
+  display: inline-block;
+  padding-right: 5rem;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .share:target {
