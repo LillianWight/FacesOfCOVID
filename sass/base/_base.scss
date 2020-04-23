@@ -10,7 +10,7 @@ html {
   // This defines what 1rem is i.e. 10px; 10px / 16px (browser default font size) = .625
   font-size: 62.5%;
 
-  @include respond(netbook) {
+  /* @include respond(netbook) {
     font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
   }
 
@@ -20,7 +20,7 @@ html {
 
   @include respond(lg-desk) {
     font-size: 75%; //1 rem = 12px, 12/16 = 75%
-  }
+  } */
 
 }
 

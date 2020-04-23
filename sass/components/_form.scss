@@ -6,10 +6,13 @@
 
     &__group {
         margin-bottom: 2rem;
+        display: inline-block;
+        width: 100%;
+        line-height: 0;
     }
 
     &__input {
-        font-size: 1.5rem;
+        font-size: inherit;
         font-family: inherit;
         color: $color-grey-dark-3;
         padding: 1rem;
@@ -38,7 +41,6 @@
     &__label {
         font-size: 2rem;
         font-weight: 700;
-        
         margin-top: .7rem;
         display: block;
         transition: all .3s;
@@ -50,4 +52,72 @@
         transform: translateY(-4rem);
     }
 
+    &__upload--wrapper {
+        position: relative;
+        width: 55%;
+        height: 6rem;
+
+        &:before {
+            content: 'Upload';
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            height: 60px;
+            background: $color-grey-light-1;
+            color: $color-grey-dark-3;
+            font-weight: 700;
+            z-index: 1501;
+            font-size: 2rem;
+            line-height: 6rem;
+            padding: 0 1.5rem;
+            text-transform: uppercase;
+            pointer-events: none;
+            border-radius: 0 5px 5px 0;
+        }
+    }
+
+        &:after {
+            content: attr(data-text);
+            font-size: 2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $color-grey-light-1;
+            padding: 1rem 1.5rem;
+            display: block;
+            width: calc(100% - 4rem);
+            pointer-events: none;
+            z-index: 1501;
+            height: 4rem;
+            line-height: 4rem;
+            color: $color-grey-dark-2;
+            border-radius: 5px 10px 10px 5px;
+            font-weight: 300;
+        }
+
+        &:hover {
+            &:before {
+              background: $color-secondary-dark;
+            }
+          }
+           input {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1502;
+            height: 4rem;
+            margin: 0;
+            padding: 0;
+            display: block;
+            cursor: pointer;
+            width: 100%;
+          }
+}
+
+#form__group {
+    padding-bottom: 8px;
 }

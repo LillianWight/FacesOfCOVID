@@ -22,24 +22,17 @@ $breakpoint ARGUMENTS
 
 html {
   font-size: 62.5%;
-}
-
-@media (max-width: 75em) {
-  html {
-    font-size: 56.25%;
+  /* @include respond(netbook) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
   }
-}
 
-@media (max-width: 56.25em) {
-  html {
-    font-size: 50%;
+  @include respond(tablet) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%;
   }
-}
 
-@media (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }
+  @include respond(lg-desk) {
+    font-size: 75%; //1 rem = 12px, 12/16 = 75%
+  } */
 }
 
 body {
@@ -270,10 +263,13 @@ img {
 
 .form__group {
   margin-bottom: 2rem;
+  display: inline-block;
+  width: 100%;
+  line-height: 0;
 }
 
 .form__input {
-  font-size: 1.5rem;
+  font-size: inherit;
   font-family: inherit;
   color: #333;
   padding: 1rem;
@@ -314,6 +310,74 @@ img {
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
           transform: translateY(-4rem);
+}
+
+.form__upload--wrapper {
+  position: relative;
+  width: 55%;
+  height: 6rem;
+}
+
+.form__upload--wrapper:before {
+  content: 'Upload';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 60px;
+  background: #f7f7f7;
+  color: #333;
+  font-weight: 700;
+  z-index: 1501;
+  font-size: 2rem;
+  line-height: 6rem;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.form:after {
+  content: attr(data-text);
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f7f7f7;
+  padding: 1rem 1.5rem;
+  display: block;
+  width: calc(100% - 4rem);
+  pointer-events: none;
+  z-index: 1501;
+  height: 4rem;
+  line-height: 4rem;
+  color: #999;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 300;
+}
+
+.form:hover:before {
+  background: #ff7730;
+}
+
+.form input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1502;
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+#form__group {
+  padding-bottom: 8px;
 }
 
 .share {
