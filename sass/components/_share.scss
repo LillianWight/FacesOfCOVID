@@ -69,22 +69,5 @@
             cursor: pointer;
         }
     }
-    
-    &__link {
-        &:link,
-        &:visited {
-            color: $color-grey-dark-2;
-            text-decoration: none;
-            text-transform: uppercase;
-            display: inline-block;
-            transition: all .2s;
-        }
-
-        &:hover,
-        &:active {
-            color: $color-secondary-dark;
-            cursor: pointer;
-        }
-    }
 }
 
