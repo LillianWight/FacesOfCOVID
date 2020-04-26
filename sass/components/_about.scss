@@ -10,7 +10,6 @@
     visibility: hidden;
     transition: all .8s;
     backdrop-filter: blur(10px);
-    
 
     &__content {
         @include center;
@@ -28,7 +27,6 @@
         transition: all .5s;
     }
 
-
     &__text {
         background-color: transparent;
         color: $color-grey-light-2;
@@ -40,7 +38,7 @@
         left: 50%;
     }
 
-    //OPEN STATES
+    // OPEN STATES 
 
     &:target {
         opacity: 1;
