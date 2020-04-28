@@ -258,6 +258,100 @@ img {
   height: auto !important;
 }
 
+.contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.contact__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
+  background: url(/img/candle-small.jpg) #fff;
+  background-size: 100%;
+  background-position: bottom;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact__text {
+  background-color: transparent;
+  color: #eee;
+  width: 25%;
+  font-size: 1.6rem;
+  text-align: left;
+  padding: 10rem;
+  position: relative;
+  left: 30%;
+}
+
+.contact:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact:target .contact__content {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.contact__close:link, .contact__close:visited {
+  color: #999;
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  line-height: 1;
+  z-index: 3001;
+}
+
+.contact__close:hover {
+  color: #ff7730;
+  cursor: pointer;
+}
+
+.contact__link:link, .contact__link:visited {
+  color: #999;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.contact__link:hover, .contact__link:active {
+  color: #ff7730;
+  cursor: pointer;
+}
+
 .form {
   width: 100%;
 }
