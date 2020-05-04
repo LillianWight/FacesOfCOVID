@@ -1,12 +1,18 @@
 .form {
     width: 100%;
+    
+    padding-right: 5rem;
 
-    &__group {
+    
+
+    &__group {        
         margin-bottom: 2rem;
         display: inline-block;
         width: 100%;
         line-height: 0;
-        direction: rtl;
+        direction: rtl;    
+      
+
     }
 
     &__input {
@@ -102,7 +108,11 @@
               background: $color-secondary-dark;
             }
         }
-    }    
+    }
+    
+    &__next {
+        text-align: center;
+    }
 
     &__link {
         padding: 2rem 0;
@@ -123,10 +133,6 @@
             cursor: pointer;
         }
     }
-}
-
-#form__group {
-    padding-bottom: 8px;
 }
 
 input .file-upload-field {
