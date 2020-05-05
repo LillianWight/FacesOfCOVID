@@ -358,11 +358,11 @@ img {
 }
 
 .form__group {
-  margin-bottom: 2rem;
   display: inline-block;
   width: 100%;
   line-height: 0;
   direction: rtl;
+  margin-bottom: 2rem;
 }
 
 .form__input {
@@ -539,7 +539,6 @@ input .file-upload-field {
 .share__form {
   display: inline-block;
   padding-right: 5rem;
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .share:target {
