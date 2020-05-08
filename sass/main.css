@@ -359,6 +359,7 @@ select {
           appearance: none;
   border: none;
   padding: 1rem;
+  outline: none;
 }
 
 select:required:invalid {
@@ -401,11 +402,6 @@ option {
   -webkit-transition: all .3s;
   transition: all .3s;
   direction: ltr;
-}
-
-.form__input:focus {
-  outline: none;
-  border-bottom: 3px solid #ffb900;
 }
 
 .form__input:focus:invalid {

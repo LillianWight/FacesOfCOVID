@@ -5,6 +5,7 @@ select {
     appearance: none;
     border: none;
     padding: 1rem;
+    outline: none;
 }
 
 select:required:invalid {
@@ -47,13 +48,9 @@ option {
         transition: all .3s;
         direction: ltr;
 
-        &:focus {
-            outline: none;
-            border-bottom: 3px solid $color-secondary-light;
-
-            &:invalid {
+        &:focus:invalid {
                 border-bottom: 3px solid $color-secondary-dark;
-            }
+        
         }
 
         &::-webkit-input-placeholder {
