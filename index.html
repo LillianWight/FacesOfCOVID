@@ -44,8 +44,12 @@
                 <a href="#" class="share__close">&times;</a>
                     <div class="share__form">
                         
-
                         <form action="#" class="form needs-validation">
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Your EMAIL ADDRESS (for verification)" id="email" required>
+                                <label for="email" class="form__label">EMAIL ADDRESS</label>
+                            </div><!-- end form__group -->
                             
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="FULL NAME of Your Loved One" id="name" required>
@@ -59,7 +63,7 @@
 
                             <div class="form__group">
                                 <select id="country" name="country" class="form__input" required>
-                                    <option value="">COUNTRY where your loved one died</option>
+                                    <option value="" disabled selected>COUNTRY where your loved one died</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="AX">Åland Islands</option>
                                     <option value="AL">Albania</option>
@@ -310,12 +314,6 @@
                                     <option value="ZM">Zambia</option>
                                     <option value="ZW">Zimbabwe</option>
                                 </select><!-- end country -->
-                                
-                            </div><!-- end form__group -->
-
-                            <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Your EMAIL ADDRESS (for verification)" id="email" required>
-                                <label for="email" class="form__label">EMAIL ADDRESS</label>
                             </div><!-- end form__group -->
 
                             <div class="form__next">
