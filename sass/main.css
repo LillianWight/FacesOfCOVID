@@ -68,8 +68,8 @@ body {
 }
 
 .secondaryHeading {
-  padding: 5rem 0;
-  text-align: center;
+  padding: 5rem;
+  text-align: left;
   color: #ffdd80;
 }
 
@@ -360,6 +360,8 @@ select {
   border: none;
   padding: 1rem;
   outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 select:required:invalid {
@@ -375,17 +377,31 @@ option {
 }
 
 /* FORM */
-.form {
-  width: 100%;
-  padding-right: 5rem;
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 0 5rem;
 }
 
 .form__group {
   margin-bottom: 2rem;
-  display: inline-block;
-  width: 100%;
   line-height: 0;
-  direction: rtl;
 }
 
 .form__input {
@@ -398,10 +414,9 @@ option {
   background-color: #f7f7f7;
   border: none;
   border-bottom: 3px solid transparent;
-  display: block;
+  outline: none;
   -webkit-transition: all .3s;
   transition: all .3s;
-  direction: ltr;
 }
 
 .form__input:focus:invalid {
@@ -415,8 +430,7 @@ option {
 .form__label {
   font-size: 2rem;
   font-weight: 700;
-  margin-top: 1rem;
-  display: block;
+  margin-left: 1rem;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -428,12 +442,8 @@ option {
           transform: translateY(-4rem);
 }
 
-.form__next {
-  text-align: center;
-}
-
 .form__link {
-  padding: 2rem 0;
+  padding: 0 0 4rem 0;
 }
 
 .form__link:link, .form__link:visited {
@@ -476,7 +486,7 @@ option {
   margin: 0 auto;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
-  background: url(/img/candle-small.jpg), rgba(0, 0, 0, 0.4);
+  background: url(/img/candle-small-flip.jpg), rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-position: bottom;
   border-radius: 3px;
@@ -487,11 +497,6 @@ option {
           transform: translate(-50%, -50%) scale(0);
   -webkit-transition: all .5s;
   transition: all .5s;
-}
-
-.share__form {
-  display: inline-block;
-  padding-right: 5rem;
 }
 
 .share:target {

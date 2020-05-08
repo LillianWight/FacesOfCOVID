@@ -1,11 +1,11 @@
 
 /* COUNTRY SELECTION DROPDOWN */
-
 select {
     appearance: none;
     border: none;
     padding: 1rem;
     outline: none;
+    box-sizing: border-box;
 }
 
 select:required:invalid {
@@ -22,16 +22,25 @@ option {
 
 /* FORM */
 
+input {
+    box-sizing: border-box;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 0 5rem;
+
+}
+
 .form {
-    width: 100%;
-    padding-right: 5rem;
 
     &__group {        
         margin-bottom: 2rem;
-        display: inline-block;
-        width: 100%;
         line-height: 0;
-        direction: rtl;    
     }
 
     &__input {
@@ -44,9 +53,8 @@ option {
         background-color: $color-grey-light-1;
         border: none;
         border-bottom: 3px solid transparent;
-        display: block;
+        outline: none;
         transition: all .3s;
-        direction: ltr;
 
         &:focus:invalid {
                 border-bottom: 3px solid $color-secondary-dark;
@@ -61,8 +69,8 @@ option {
     &__label {
         font-size: 2rem;
         font-weight: 700;
-        margin-top: 1rem;
-        display: block;
+        margin-left: 1rem;
+        
         transition: all .3s;
     }
 
@@ -72,12 +80,8 @@ option {
         transform: translateY(-4rem);
     }
 
-    &__next {
-        text-align: center;
-    }
-
     &__link {
-        padding: 2rem 0;
+        padding: 0 0 4rem 0;
 
         &:link,
         &:visited {
