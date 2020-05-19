@@ -1,0 +1,31 @@
+*, 
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+  // This defines what 1rem is i.e. 10px; 10px / 16px (browser default font size) = .625
+  font-size: 62.5%;
+
+  /* @include respond(netbook) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tablet) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%;
+  }
+
+  @include respond(lg-desk) {
+    font-size: 75%; //1 rem = 12px, 12/16 = 75%
+  } */
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+

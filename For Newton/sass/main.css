@@ -213,10 +213,10 @@ h4 {
 }
 
 .photos__cards {
-  -webkit-perspective: 1500rem;
-          perspective: 1500rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  width: 100%;
   position: relative;
-  line-height: 0;
 }
 
 .photos__cards--side.flipped {
@@ -225,13 +225,15 @@ h4 {
 }
 
 .photos__cards--side {
+  height: 100%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.photos__cards__face {
+.photos__cards--front, .photos__cards--back {
+  width: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
