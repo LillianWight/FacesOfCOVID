@@ -14,10 +14,12 @@ $breakpoint ARGUMENTS
 1em = 16px
 */
 *,
-::before,
-::after {
+*:before,
+*:after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
