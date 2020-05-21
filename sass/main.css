@@ -221,8 +221,8 @@ h4 {
 
 .photos__cards:hover .photos__cards--side,
 .photos__cards.hover .photos__cards--side {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 .photos__cards--side {
