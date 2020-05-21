@@ -213,41 +213,41 @@ h4 {
 }
 
 .photos__cards {
-  -webkit-perspective: 1500rem;
-          perspective: 1500rem;
-  position: relative;
-  line-height: 0;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
 }
 
-.photos__cards--side.flipped {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+.photos__cards:hover .photos__cards--side,
+.photos__cards.hover .photos__cards--side {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .photos__cards--side {
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.photos__cards__face {
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  z-index: 2;
+  position: relative;
 }
 
 .photos__cards--front {
-  z-index: 1;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  line-height: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .photos__cards--back {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #eee;
   color: #000;
-  padding: 5rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }

@@ -4,22 +4,22 @@ $("form").on("change", ".file-upload-field", function(){
 
 
 
-$('.photo__cards').hover(function(){
-    $(this).find('.photo__cards--side').addClass('flipped');
+$('.photos__cards').hover(function(){
+    $(this).find('.photos__cards--side').addClass('flipped');
     return false;
 }).mouseleave(function () {
-    $('.photo__cards > .photo__cards--side').removeClass('flipped');
+    $('.photos__cards > .photos__cards--side').removeClass('flipped');
 });
 
-var frontHeight = $('.photo__cards--front').outerHeight();
+var frontHeight = $('.photos__cards--front').outerHeight();
 var backHeight = $('.photos__cards--back').outerHeight();
 
 if (frontHeight > backHeight) {
-    $('.photo__cards, .photos__cards--back').height(frontHeight);
+    $('.photos__cards, .photos__cards--back').height(frontHeight);
 }
 else if (frontHeight > backHeight) {
-    $('.photo__cards, .photo__cards--front').height(backHeight);
+    $('.photos__cards, .photos__cards--front').height(backHeight);
 }
 else {
-    $('.photo__cards').height(backHeight);
+    $('.photos__cards').height(backHeight);
 }
