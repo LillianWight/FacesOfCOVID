@@ -74,7 +74,11 @@ body {
 }
 
 h4 {
-  padding-bottom: 1rem;
+  padding: 1rem;
+}
+
+p {
+  padding: 0 2rem 2rem;
 }
 
 .about {
@@ -246,10 +250,13 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  height: 100%;
   background-color: #eee;
   color: #000;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  overflow-y: auto;
 }
 
 img {
