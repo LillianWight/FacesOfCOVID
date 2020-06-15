@@ -213,7 +213,7 @@ p {
   padding: 0;
 }
 
-.photos__cards {
+.photos__column {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
