@@ -205,58 +205,26 @@ p {
 }
 
 .photos {
-  -webkit-column-count: 5;
-          column-count: 5;
-  -webkit-column-gap: 0px;
-          column-gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
 }
 
 .photos__cards {
-  -webkit-perspective: 1000rem;
-          perspective: 1000rem;
-}
-
-.photos__cards:hover .photos__cards--side,
-.photos__cards.hover .photos__cards--side {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.photos__cards--side {
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  position: relative;
-}
-
-.photos__cards--front {
-  z-index: 2;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  line-height: 0;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.photos__cards--back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  background-color: #eee;
-  color: #000;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  overflow-y: auto;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  max-width: 20%;
+  padding: 0;
 }
 
 img {
   width: 100% !important;
   height: auto !important;
+  vertical-align: middle;
 }
 
 .contact {

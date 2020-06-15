@@ -1,44 +1,17 @@
 .photos {
-    column-count: 5;
-    column-gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 
     &__cards {
-        perspective: 1000rem;
-
-        &:hover &--side,
-        &.hover &--side {
-            transform: rotateY(-180deg);
-        }
-
-        &--side {
-            transition: all .8s ease;
-            transform-style: preserve-3d;
-            position: relative;
-        }
-
-        &--front {
-            z-index: 2;
-            transform: rotateY(0deg);
-            line-height: 0;
-            backface-visibility: hidden;
-        }
-
-        &--back {
-            transform: rotateY(180deg);
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            height: 100%;
-            background-color: $color-grey-light-2;
-            color: $color-black;
-            backface-visibility: hidden;
-            overflow-y: auto;
-        }
+        flex: 20%;
+        max-width: 20%;
+        padding: 0;
     }
 }
 
 img {
     width: 100% !important;
     height: auto !important;
+    vertical-align: middle;
 }
