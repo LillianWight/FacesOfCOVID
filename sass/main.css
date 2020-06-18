@@ -204,29 +204,6 @@ p {
           box-shadow: inset 0.4rem 0.4rem 0.9rem rgba(0, 0, 0, 0.8);
 }
 
-.photos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0;
-}
-
-.photos__column {
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
-  max-width: 20%;
-  padding: 0;
-}
-
-img {
-  width: 100% !important;
-  height: auto !important;
-  vertical-align: middle;
-}
-
 .contact {
   position: fixed;
   top: 0;
@@ -427,6 +404,102 @@ form {
 .form__link:hover, .form__link:active {
   color: #ff7730;
   cursor: pointer;
+}
+
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+.photos__column {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  max-width: 20%;
+  padding: 0;
+}
+
+.photos__wrapper {
+  position: relative;
+}
+
+.photos__wrapper, .photos .photos__memory:focus,
+.photos__wrapper:hover .photos__memory {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.photos__memory {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.photos__memory:link, .photos__memory:focus, .photos__memory:visited {
+  text-decoration: none;
+}
+
+.photos__details {
+  margin: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.photos__name-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 2rem;
+  color: #f7f7f7;
+  text-transform: uppercase;
+}
+
+.photos__name-date h4 {
+  padding: 0;
+}
+
+.photos__read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100% !important;
+  height: auto !important;
+  vertical-align: middle;
 }
 
 .share {

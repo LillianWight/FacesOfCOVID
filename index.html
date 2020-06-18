@@ -360,17 +360,32 @@
 
 		<main>
             <section class="photos">
-                <div class="photos__column photos__column-1"> 
-                    <img src="img/Dario-Sr.jpg" alt="photo of a young man and his father">
+                <div class="photos__column photos__column-1">
+                    <div class="photos__container">
+                        <div class="photos__wrapper">
+                            <img src="img/Dario-Sr.jpg" alt="photo of a young man and his father" class="photos__image">
+                            <a href="#Dario" class="photos__memory">
+                                <div class="photos__details">
+                                    <div class="photos__name-date">
+                                        <h4 class="photos__name">Peter Dario, Sr.</h4>
+                                        <h5 class="photos__date">19/03/2020</h5>
+                                    </div>
+                                    <div class="photos__read-more">Read the memory
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- end photos__wrapper -->
+                    </div><!-- end photos__container-->
+                    
                     <img src="img/warlito-valdez.jpeg" alt="a man in a wooded area with a sunset behind him">
                             
 
                         
                             <!--<h4>Peter Dario, Sr.</h4>
                                 <h5>March 19, 2020</h5>
-                                <p>My dad ... died alone because the hospital restricted all visitors in order to contain the outbreak. My deepest regret was not saying bye to him when I brought him to the hospital. I thought it was going to be a “Take care, see you back home.”</p> -->
+                                 -->
                         
-                </div><!-- end photos__cards -->
+                </div><!-- end photos__column-1 -->
 
                 <div class="photos__column photos__column-2">
                     <img src="img/Frank-Gabrin.jpg" alt="photo of a man and his friend">
@@ -447,5 +462,8 @@
         </main>
         <!--<script src="js/upload.js"></script>
         <!-- <script src="js/description.js"></script>" -->
+        <div class="Dario" id="dario">
+            <p>My dad ... died alone because the hospital restricted all visitors in order to contain the outbreak. My deepest regret was not saying bye to him when I brought him to the hospital. I thought it was going to be a “Take care, see you back home.”</p>
+        </div>
     </body>
 </html>
