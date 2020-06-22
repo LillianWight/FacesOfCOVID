@@ -425,9 +425,11 @@ form {
 
 .photos__wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.photos__wrapper, .photos .photos__memory:focus,
 .photos__wrapper:hover .photos__memory {
   opacity: 1;
   cursor: pointer;
@@ -445,6 +447,9 @@ form {
   cursor: none;
   -webkit-transition: all .3s;
   transition: all .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .photos__memory:link, .photos__memory:focus, .photos__memory:visited {
@@ -453,6 +458,7 @@ form {
 
 .photos__details {
   margin: 1.5rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,13 +485,13 @@ form {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-size: 2rem;
   color: #f7f7f7;
   text-transform: uppercase;
 }
 
 .photos__name-date h4 {
   padding: 0;
+  font-size: 2rem;
 }
 
 .photos__read-more {
@@ -569,6 +575,22 @@ img {
 .share__close:hover {
   color: #ff7730;
   cursor: pointer;
+}
+
+.text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .header {
