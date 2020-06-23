@@ -430,8 +430,8 @@ form {
   margin: 0 auto;
   height: 80%;
   width: 25%;
-  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
-          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.8);
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
@@ -443,6 +443,7 @@ form {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 
 .dario__memory-text {

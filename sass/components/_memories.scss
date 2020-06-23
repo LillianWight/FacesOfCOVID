@@ -15,8 +15,7 @@
         margin: 0 auto;
         height: 80%;
         width: 25%;
-        box-shadow: 0 2rem 4rem rgba($color-black, .6);
-        
+        box-shadow: 0 4rem 6rem rgba($color-black, .8);
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
         transition: all .5s;
@@ -26,6 +25,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        overflow: hidden;
 
 
 
