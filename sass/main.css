@@ -406,6 +406,93 @@ form {
   cursor: pointer;
 }
 
+.dario {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.dario__memory {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0 auto;
+  height: 80%;
+  width: 25%;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 3px;
+  background-image: url(/img/Dario-Sr.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dario__memory-text {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.dario__memory-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  padding: 0;
+  color: #eee;
+  text-align: justify;
+}
+
+.dario:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dario:target .dario__memory {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.dario__close:link, .dario__close:visited {
+  color: #eee;
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  line-height: 1;
+}
+
+.dario__close:hover {
+  color: #fff;
+}
+
 .photos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,22 +662,6 @@ img {
 .share__close:hover {
   color: #ff7730;
   cursor: pointer;
-}
-
-.text {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 3000;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all .8s;
-  transition: all .8s;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 
 .header {
