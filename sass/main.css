@@ -406,7 +406,7 @@ form {
   cursor: pointer;
 }
 
-.dario {
+.memory {
   position: fixed;
   top: 0;
   left: 0;
@@ -421,7 +421,7 @@ form {
           backdrop-filter: blur(10px);
 }
 
-.dario__memory {
+.memory__dario {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -430,8 +430,8 @@ form {
   margin: 0 auto;
   height: 80%;
   width: 25%;
-  -webkit-box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.8);
-          box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 4rem 2rem rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4rem 2rem rgba(0, 0, 0, 0.8);
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
@@ -446,14 +446,14 @@ form {
   overflow: hidden;
 }
 
-.dario__memory-text {
+.memory__dario__text {
   width: 100%;
   height: 100%;
   background-color: rgba(51, 51, 51, 0.8);
   position: relative;
 }
 
-.dario__memory-text p {
+.memory__dario__text p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -466,18 +466,18 @@ form {
   line-height: 1.3;
 }
 
-.dario:target {
+.memory:target {
   opacity: 1;
   visibility: visible;
 }
 
-.dario:target .dario__memory {
+.memory:target .memory__dario {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-.dario__close:link, .dario__close:visited {
+.memory__close:link, .memory__close:visited {
   color: #eee;
   position: absolute;
   top: 1.5rem;
@@ -491,7 +491,7 @@ form {
   z-index: 3001;
 }
 
-.dario__close:hover {
+.memory__close:hover {
   color: #fff;
 }
 
@@ -564,10 +564,10 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -581,6 +581,13 @@ form {
 .photos__name-date h4 {
   padding: 0;
   font-size: 2rem;
+}
+
+.photos__demo {
+  text-transform: uppercase;
+  color: #ffdd80;
+  text-align: justify;
+  font-size: 1.3rem;
 }
 
 .photos__read-more {

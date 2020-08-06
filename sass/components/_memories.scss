@@ -1,4 +1,4 @@
-.dario {
+.memory {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,12 +10,12 @@
     transition: all .3s;
     backdrop-filter: blur(10px);
 
-    &__memory {
+    &__dario {
         @include center;
         margin: 0 auto;
         height: 80%;
         width: 25%;
-        box-shadow: 0 4rem 6rem rgba($color-black, .8);
+        box-shadow: 0 4rem 2rem rgba($color-black, .8);
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
         transition: all .5s;
@@ -27,27 +27,24 @@
         background-position: center;
         overflow: hidden;
 
+    &__text {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-grey-dark-3, .8);
+        position: relative;
 
-
-        &-text {
-            width: 100%;
-            height: 100%;
-            background-color: rgba($color-grey-dark-3, .8);
-            position: relative;
-
-            p {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 2rem;
-                padding: 0;
-                color: $color-grey-light-2;
-                text-align: justify;
-                line-height: 1.3;
-
-            }
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            padding: 0;
+            color: $color-grey-light-2;
+            text-align: justify;
+            line-height: 1.3;
         }
+    }
     }
 
 
@@ -59,7 +56,7 @@
         visibility: visible;
     }
 
-    &:target &__memory {
+    &:target &__dario {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
