@@ -421,7 +421,7 @@ form {
           backdrop-filter: blur(10px);
 }
 
-.memory__dario {
+.memory__lovedOne {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -432,6 +432,7 @@ form {
   width: 25%;
   -webkit-box-shadow: 0 4rem 2rem rgba(0, 0, 0, 0.8);
           box-shadow: 0 4rem 2rem rgba(0, 0, 0, 0.8);
+  overflow: hidden;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
@@ -443,17 +444,16 @@ form {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
 }
 
-.memory__dario__text {
+.memory__lovedOne-text {
   width: 100%;
   height: 100%;
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   position: relative;
 }
 
-.memory__dario__text p {
+.memory__lovedOne-text p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -471,7 +471,7 @@ form {
   visibility: visible;
 }
 
-.memory:target .memory__dario {
+.memory:target .memory__lovedOne {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
