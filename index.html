@@ -15,6 +15,7 @@
     
 	<body>
 
+        <!-- FIXED-POSITION BUTTON -->
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
             <label for="navi-toggle" class="navigation__button">
@@ -22,6 +23,7 @@
             </label>
             <div class="navigation__background">&nbsp;</div><!-- end navigation__background -->
 
+            <!-- NAVIGATION MENU -->
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
@@ -33,6 +35,7 @@
             </nav>
         </div><!-- end navigation -->
 
+        <!-- NAVIGATION LIST ITEMS -->
         <div class="about" id="about">
             <div class="about__content">
                 <a href="#" class="about__close">&times;</a>
@@ -349,6 +352,7 @@
             </div>
         </div>
 
+        <!-- SITE HEADER -->
 		<header class="header" id="header">
             <div class="header__textBox">
             <h1 class="primaryHeading"> 
@@ -358,6 +362,7 @@
             </div><!-- end header__textBox -->
         </header>
 
+        <!-- FRONT PAGE PHOTOS -->
 		<main>
             <section class="photos">
                 <div class="photos__column photos__column-1">
@@ -368,18 +373,29 @@
                                     <div class="photos__name-date">
                                         <h4 class="photos__name">Peter Dario, Sr.</h4>
                                         <h5 class="photos__date">Died: 19/03/2020</h5>
-                                    </div>
-                                    <div class="photos__demo">This memory is of a real COVID-19 victim but was not submitted by family or friends. It is for demo purposes only.</div>
+                                    </div><!-- end photos__name-date -->
+                                    <div class="photos__demo">This memory is of a real COVID-19 victim but was not submitted by family or friends. It is for demo purposes only.
+                                    </div><!-- end photos__demo -->
                                     <div class="photos__read-more">Read the memory
-                                    </div>
-                                </div>
+                                    </div><!-- end photos__read-more -->
+                                </div><!-- end photos__details -->
                             </a>
                         </div><!-- end photos__wrapper -->
                     
-                    
-                    <img src="img/warlito-valdez.jpeg" alt="a man in a wooded area with a sunset behind him">
-                            
-                        
+                        <div class="photos__wrapper">
+                            <img src="img/warlito-valdez.jpeg" alt="a man in a wooded area with a sunset behind him">
+                            <a href="#warlito" class="photos__memory">
+                                <div class="photos__details">
+                                    <div class="photos__name-date">
+                                        <h4 class="photos__name">Warlito Valdez, 47</h4>
+                                        <h5 class="photos__date">Died: April 5, 2020</h5>
+                                    <div class="photos__demo">This memory is of a real COVID-19 victim but was not submitted by family or friends. It is for demo purposes only.</div>
+                                    <div class="photos__read-more">Read the memory
+                                    </div><!-- end photos__read-more -->
+                                    </div><!-- end photos__demo -->
+                                </div><!-- end photos__details -->
+                            </a>
+                        </div><!-- end photos__wrapper -->
                 </div><!-- end photos__column-1 -->
 
                 <div class="photos__column photos__column-2">
@@ -458,13 +474,24 @@
         <!--<script src="js/upload.js"></script>
          <script src="js/description.js"></script>" -->
 
+         <!-- POPUP MEMORIES -->
+
         <div class="memory" id="dario">
-            <div class="memory__lovedOne">
+            <div class="memory__lovedOne memory__dario">
                 <a href="#" class="memory__close">&times;</a>
                 <div class="memory__lovedOne-text">
                     <p>My dad ... died alone because the hospital restricted all visitors in order to contain the outbreak. My deepest regret was not saying bye to him when I brought him to the hospital. I thought it was going to be a “Take care, see you back home.”</p>
-                </div> <!-- end memory__text -->
-            </div> <!-- end memory__dario -->
+                </div> <!-- end memory__lovedOne-text -->
+            </div> <!-- end memory__lovedOne -->
+        </div> <!-- end memory -->
+
+        <div class="memory" id="warlito">
+            <div class="memory__lovedOne memory__warlito">
+                <a href="#" class="memory__close">&times;</a>
+                <div class="memory__lovedOne-text">
+                    <p>Flozier Tabangin said her husband, Warlito Valdez, was a hero. Valdez died of COVID-19 .... He was 47. His employer, the Richmond Society for Community Living, said it became aware he caught it on the job as a residential worker helping people with intellectual and physical disabilities. "My husband has a very good heart. He is such a gentleman and a very nice person, loving husband. "It's just too sad he's gone." Now, she said, her only priority is how to raise and provide for their young daughter without him.</p>
+                </div> <!-- end memory__lovedOne-text -->
+            </div> <!-- end memory__lovedOne -->
         </div> <!-- end memory -->
     </body>
 </html>
