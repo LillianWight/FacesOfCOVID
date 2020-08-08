@@ -462,15 +462,22 @@ form {
   line-height: 1.3;
 }
 
-.memory__dario {
+.memory__peterDario {
   background-image: url(/img/Dario-Sr.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.memory__warlito {
+.memory__warlitoValdez {
   background-image: url(/img/warlito-valdez.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.memory__frankGabrin {
+  background-image: url(/img/Frank-Gabrin.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

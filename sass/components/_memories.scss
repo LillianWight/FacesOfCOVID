@@ -44,15 +44,22 @@
         }
     }
 
-    &__dario {
+    &__peterDario {
         background-image: url(/img/Dario-Sr.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
 
-    &__warlito {
+    &__warlitoValdez {
         background-image: url(/img/warlito-valdez.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__frankGabrin {
+        background-image: url(/img/Frank-Gabrin.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
