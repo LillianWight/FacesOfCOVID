@@ -483,6 +483,13 @@ form {
   background-position: center;
 }
 
+.memory__juanitaRobinson {
+  background-image: url(/img/juanita-robinson-and-howard-robinson.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .memory:target {
   opacity: 1;
   visibility: visible;
