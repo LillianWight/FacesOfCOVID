@@ -119,7 +119,7 @@ p {
   background-color: transparent;
   color: #eee;
   width: 25%;
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-align: left;
   padding: 10rem;
   position: relative;
@@ -212,7 +212,7 @@ p {
 .construction__header {
   letter-spacing: 1rem;
   font-size: 3rem;
-  color: #ffdd80 !important;
+  color: #ffb900 !important;
   padding: 2rem;
 }
 
@@ -231,7 +231,7 @@ p {
 }
 
 .construction__link:hover, .construction__link:active {
-  color: #ff7730;
+  color: #ffb900;
   cursor: pointer;
 }
 
@@ -257,7 +257,7 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
@@ -355,7 +355,7 @@ p {
   margin: 0 auto;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
-  background: url(/img/candle-small.jpg) #fff;
+  /* background: url(/img/candle-small.jpg) $color-white; */
   background-size: cover;
   background-position: bottom;
   border-radius: 3px;
@@ -394,7 +394,7 @@ p {
 }
 
 .credits__close:hover {
-  color: #ff7730;
+  color: #ffb900;
   cursor: pointer;
 }
 
@@ -796,7 +796,7 @@ img {
   margin: 0 auto;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
-  background: url(/img/candle-small-flip.jpg), rgba(0, 0, 0, 0.4);
+  /* background: url(/img/candle-small-flip.jpg), rgba($color-black, .4); */
   background-size: cover;
   background-position: bottom;
   border-radius: 3px;
@@ -839,7 +839,7 @@ img {
 }
 
 .share__close:hover {
-  color: #ff7730;
+  color: #ffb900;
   cursor: pointer;
 }
 

@@ -16,7 +16,7 @@
         width: 70%;
         margin: 0 auto;
         box-shadow: 0 2rem 4rem rgba($color-black, .7);
-        background: url(/img/candle-small.jpg) $color-white;
+        /* background: url(/img/candle-small.jpg) $color-white; */
         background-size: cover;
         background-position: bottom;
         border-radius: 3px;
@@ -57,7 +57,7 @@
         }
 
         &:hover {
-            color: $color-secondary-dark;
+            color: $color-secondary-light;
             cursor: pointer;
         }
     }

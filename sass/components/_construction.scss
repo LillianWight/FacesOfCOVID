@@ -5,7 +5,7 @@
     &__header {
         letter-spacing: 1rem;
         font-size: 3rem;
-        color: $color-secondary-light-2 !important;
+        color: $color-secondary-light !important;
         padding: 2rem;
     }
 
@@ -25,7 +25,7 @@
         }
         &:hover,
         &:active {
-            color: $color-secondary-dark;
+            color: $color-secondary-light;
             cursor: pointer;
         }
     }
