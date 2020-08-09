@@ -28,6 +28,12 @@
         transition: all .5s;
     }
 
+    &__content > h2 {
+        color: #333 !important;
+    }
+
+    
+
     //OPEN STATES
 
     &:target {

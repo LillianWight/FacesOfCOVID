@@ -1,0 +1,32 @@
+.construction {
+    width: 55%;
+    text-align: center;
+
+    &__header {
+        letter-spacing: 1rem;
+        font-size: 3rem;
+        color: $color-secondary-light-2 !important;
+        padding: 2rem;
+    }
+
+    &__text {
+        color: #eee;
+        font-size: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+        text-decoration: none;
+        color: $color-secondary-light-2;
+        display: inline-block;
+        transition: all .2s;
+        }
+        &:hover,
+        &:active {
+            color: $color-secondary-dark;
+            cursor: pointer;
+        }
+    }
+}

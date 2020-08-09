@@ -1,4 +1,4 @@
-.contact {
+.credits {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
 
     &__content {
         @include center;
-        width: 30%;
+        width: 70%;
         margin: 0 auto;
         box-shadow: 0 2rem 4rem rgba($color-black, .7);
         background: url(/img/candle-small.jpg) $color-white;
@@ -25,17 +25,6 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
         transition: all .5s;
-    }
-
-    &__text {
-        background-color: transparent;
-        color: $color-grey-light-2;
-        width: 25%;
-        font-size: 2rem;
-        text-align: left;
-        padding: 10rem;
-        position: relative;
-        left: 30%;
     }
 
     // OPEN STATES 
@@ -68,23 +57,6 @@
         }
 
         &:hover {
-            color: $color-secondary-dark;
-            cursor: pointer;
-        }
-    }
-    
-    &__link {
-        &:link,
-        &:visited {
-            color: $color-grey-dark-2;
-            text-decoration: none;
-            text-transform: uppercase;
-            display: inline-block;
-            transition: all .2s;
-        }
-
-        &:hover,
-        &:active {
             color: $color-secondary-dark;
             cursor: pointer;
         }
