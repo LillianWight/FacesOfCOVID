@@ -490,6 +490,48 @@ form {
   background-position: center;
 }
 
+.memory__margaretShea {
+  background-image: url(/img/margaret-shea.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.memory__susanFarrell {
+  background-image: url(/img/Susan-Farrell.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.memory__rebeccaMack {
+  background-image: url(/img/Rebecca-Mack.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.memory__arleneReid {
+  background-image: url(/img/arlene-reid.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.memory__bellyMujinga {
+  background-image: url(/img/Belly-Mujinga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.memory__joeMattern {
+  background-image: url(/img/Joe-Mattern.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .memory:target {
   opacity: 1;
   visibility: visible;
