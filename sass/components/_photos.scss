@@ -37,6 +37,10 @@
         transition: all .3s;
         display: flex;
 
+        @include respond(phone) {
+            opacity: 1;
+        }
+
         &:link,
         &:focus,
         &:visited {

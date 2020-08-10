@@ -744,6 +744,12 @@ form {
   display: flex;
 }
 
+@media (max-width: 25em) {
+  .photos__memory {
+    opacity: 1;
+  }
+}
+
 .photos__memory:link, .photos__memory:focus, .photos__memory:visited {
   text-decoration: none;
 }
