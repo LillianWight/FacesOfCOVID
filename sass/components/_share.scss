@@ -17,9 +17,10 @@
         width: 75%;
         margin: 0 auto;
         box-shadow: 0 2rem 4rem rgba($color-black, .7);
-        /* background: url(/img/candle-small-flip.jpg), rgba($color-black, .4); */
+        background-color: rgba($color-black, .5);
+        /* background: url(/img/candle-small-flip.jpg), rgba($color-black, .4);
         background-size: cover;
-        background-position: bottom;
+        background-position: bottom; */
         border-radius: 3px;
         font-size: $default-font-size;
         overflow: hidden;
@@ -61,6 +62,13 @@
             transition: all .2s;
             line-height: 1;
             z-index: 3001;
+
+            @include respond(phone) {
+                font-size: 3rem;
+                top: .5rem;
+                right: 1.5rem;
+                color: $color-secondary-light;
+            }
         }
 
         &:hover {
