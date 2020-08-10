@@ -15,7 +15,7 @@
 
 // MEDIA QUERY MANAGER
 /*
-0-400px		Phone
+0-500px		Phone
 401-700px	Tablet
 701-900px	Netbook
 901-1600px	Current styles apply
@@ -31,7 +31,7 @@ $breakpoint ARGUMENTS
 */
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
-		@media (max-width: 25em) { @content };
+		@media (max-width: 31.25em) { @content };
 	}
 	@if $breakpoint == tablet {
 		@media (max-width: 43.75em) { @content };
