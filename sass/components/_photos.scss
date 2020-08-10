@@ -38,6 +38,7 @@
         display: flex;
 
         @include respond(phone) {
+            background-color: rgba($color-black, .3);
             opacity: 1;
         }
 

@@ -746,6 +746,7 @@ form {
 
 @media (max-width: 25em) {
   .photos__memory {
+    background-color: rgba(0, 0, 0, 0.3);
     opacity: 1;
   }
 }
