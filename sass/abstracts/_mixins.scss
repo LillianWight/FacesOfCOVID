@@ -15,11 +15,11 @@
 
 // MEDIA QUERY MANAGER
 /*
-0-600px		Phone
-600-900px	Tablet
-900-1200px	Netbook
-1200-1800px	Current styles apply
-1800px+		Large desktops
+0-400px		Phone
+401-700px	Tablet
+701-900px	Netbook
+901-1600px	Current styles apply
+1600px+		Large desktops
 
 $breakpoint ARGUMENTS
 - phone
@@ -31,15 +31,15 @@ $breakpoint ARGUMENTS
 */
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
-		@media (max-width: 37.5em) { @content };
+		@media (max-width: 25em) { @content };
 	}
 	@if $breakpoint == tablet {
-		@media (max-width: 56.25em) { @content };
+		@media (max-width: 43.75em) { @content };
 	}
 	@if $breakpoint == netbook {
-		@media (max-width: 75em) { @content };
+		@media (max-width: 56.25em) { @content };
 	}
 	@if $breakpoint == lg-desk {
-		@media (min-width: 112.5em) { @content };
+		@media (min-width: 100em) { @content };
 	}
 }

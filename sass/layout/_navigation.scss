@@ -18,6 +18,13 @@
         text-align: center;
         cursor: pointer;
         padding: 1rem;
+
+        @include respond(phone) {
+            height: 4rem;
+            width: 4rem;
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -29,7 +36,14 @@
         right: 6.5rem;
         background-image: radial-gradient($color-secondary-light, $color-grey-light-1);
         z-index: 1000;
-        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);        
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        
+        @include respond(phone) {
+            height: 3rem;
+            width: 3rem;
+            top: 4.5rem;
+            right: 4.5rem;
+        }
     }
 
     &__nav {

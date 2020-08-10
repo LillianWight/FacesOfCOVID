@@ -1,9 +1,9 @@
 /*
-0-600px		Phone
-600-900px	Tablet
-900-1200px	Netbook
-1200-1800px	Current styles apply
-1800px+		Large desktops
+0-400px		Phone
+401-700px	Tablet
+701-900px	Netbook
+901-1600px	Current styles apply
+1600px+		Large desktops
 
 $breakpoint ARGUMENTS
 - phone
@@ -52,6 +52,13 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 25em) {
+  .primaryHeading__main {
+    font-size: 2rem;
+    letter-spacing: normal;
+  }
+}
+
 .primaryHeading__sub {
   display: block;
   font-size: 2rem;
@@ -60,6 +67,13 @@ body {
   letter-spacing: 1rem;
   color: #999;
   text-transform: lowercase;
+}
+
+@media (max-width: 25em) {
+  .primaryHeading__sub {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
 }
 
 .secondaryHeading {
@@ -519,6 +533,7 @@ form {
   transition: all .3s;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  z-index: 3000;
 }
 
 .memory__lovedOne {
@@ -542,6 +557,13 @@ form {
   background-color: rgba(51, 51, 51, 0.8);
 }
 
+@media (max-width: 25em) {
+  .memory__lovedOne {
+    height: 90%;
+    width: 90%;
+  }
+}
+
 .memory__lovedOne-text {
   width: 100%;
   height: 100%;
@@ -560,6 +582,12 @@ form {
   color: #eee;
   text-align: justify;
   line-height: 1.3;
+}
+
+@media (max-width: 25em) {
+  .memory__lovedOne-text p {
+    font-size: 1.7rem;
+  }
 }
 
 .memory__peterDario {
@@ -676,6 +704,15 @@ form {
           flex: 20%;
   max-width: 20%;
   padding: 0;
+}
+
+@media (max-width: 25em) {
+  .photos__column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .photos__wrapper {
@@ -847,6 +884,13 @@ img {
   padding: 5rem 0 5rem;
 }
 
+@media (max-width: 25em) {
+  .header {
+    padding-top: 10rem;
+    padding-bottom: 0rem;
+  }
+}
+
 .header__textBox {
   text-align: center;
 }
@@ -878,6 +922,15 @@ img {
   padding: 1rem;
 }
 
+@media (max-width: 25em) {
+  .navigation__button {
+    height: 4rem;
+    width: 4rem;
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
 .navigation__background {
   height: 5rem;
   width: 5rem;
@@ -891,6 +944,15 @@ img {
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media (max-width: 25em) {
+  .navigation__background {
+    height: 3rem;
+    width: 3rem;
+    top: 4.5rem;
+    right: 4.5rem;
+  }
 }
 
 .navigation__nav {
