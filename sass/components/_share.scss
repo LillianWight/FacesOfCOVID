@@ -18,19 +18,35 @@
         margin: 0 auto;
         box-shadow: 0 2rem 4rem rgba($color-black, .7);
         background-color: rgba($color-black, .5);
-        /* background: url(/img/candle-small-flip.jpg), rgba($color-black, .4);
+        background: url(/img/candle-small-flip.jpg), rgba($color-black, .4);
         background-size: cover;
-        background-position: bottom; */
+        background-position: bottom;
         border-radius: 3px;
-        font-size: $default-font-size;
         overflow: hidden;
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
         transition: all .5s;
-    }
 
-    &__content > h2 {
-        color: #333 !important;
+        &-text {
+            padding: 5rem 0 5rem 5rem;
+            font-size: 2rem;
+        }
+
+        &-link {
+            &:link,
+            &:visited {
+            text-decoration: none;
+            color: $color-secondary-light;
+            display: inline-block;
+            transition: all .2s;
+            }
+    
+            &:hover,
+            &:active {
+                color: $color-secondary-light-2;
+                cursor: pointer;
+            }
+        }
     }
 
     

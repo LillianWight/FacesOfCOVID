@@ -71,11 +71,27 @@
         }
     }
 
-    &__demo {
+    &__more {
+        display: flex;
         text-transform: uppercase;
         color: $color-secondary-light-2;
         text-align: justify;
         font-size: 1.3rem;
+
+        &-read {
+            padding: 0rem;
+        }
+
+        &-read > span {
+            color: $color-white;
+        }
+
+    }
+
+    
+
+    &__demo {
+        
     }
 
     &__read-more {
