@@ -15,31 +15,36 @@
 
 // MEDIA QUERY MANAGER
 /*
-0-399px		Phone
-400-699px	Tablet
-700-899px	Netbook
-900-px	Current styles apply
-1600px+		Large desktops
+0-480px		Phone
+481-680		Tablet - portrait mode
+681-1024	Tablet- landscape mode
+1025-1368	Netbook
+1369-1600	Desktop
+1601px+		Current styles apply
 
 $breakpoint ARGUMENTS
 - phone
-- tablet
+- portrait
+- landscape
 - netbook
-- lg-desk
+- desktop
 
 1em = 16px
 */
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
-		@media (max-width: 25em) { @content };
+		@media (max-width: 30em) { @content };
 	}
-	@if $breakpoint == tablet {
-		@media (max-width: 43.5em) { @content };
+	@if $breakpoint == portrait {
+		@media (max-width: 42.5em) { @content };
+	}
+	@if $breakpoint == landscape {
+		@media (max-width: 64em) { @content };
 	}
 	@if $breakpoint == netbook {
-		@media (max-width: 56em) { @content };
+		@media (max-width: 85.5em) { @content };
 	}
-	@if $breakpoint == lg-desk {
-		@media (min-width: 100em) { @content };
+	@if $breakpoint == desktop {
+		@media (max-width: 100em) { @content };
 	}
 }

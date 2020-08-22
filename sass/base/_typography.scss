@@ -7,46 +7,28 @@ body {
 }
 
 .primaryHeading {
+    letter-spacing: 1rem;
+
+    @include respond(phone) {
+        letter-spacing: normal;
+    }
+
     &__main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 1rem;
         color: $color-grey-dark-3;
         text-transform: uppercase;
-
-        @include respond(phone) {
-            font-size: 2rem;
-            letter-spacing: normal;
-        }
     }
 
     &__sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 6rem;
-        letter-spacing: 1rem;
         color: $color-grey-dark-2;
         text-transform: lowercase;
-
-        @include respond(phone) {
-            font-size: 1.5rem;
-            letter-spacing: normal;
-        }
+        padding-bottom: 1rem;
     }
 }
 
 .secondaryHeading {
-    padding: 5rem;
     text-align: left;
     color: $color-secondary-light-2;
 }
 
-h4 {
-    padding: 1rem;
-}
 
-p {
-    padding: 0 2rem 2rem;
-}
+
